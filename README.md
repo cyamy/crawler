@@ -1,5 +1,7 @@
 # crawler
 
+create image diff that local preview and staging.
+
 ## setup
 
 1. `pnpm install`
