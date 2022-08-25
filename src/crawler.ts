@@ -23,7 +23,7 @@ const getScreenShot = async (url: string, imagePath: string) => {
   await browser.close();
 };
 
-const clawer = async (
+const crawler = async (
   targets: {
     title: string;
     local: string;
@@ -44,4 +44,4 @@ const clawer = async (
   });
 };
 
-clawer(targets);
+crawler(targets);
