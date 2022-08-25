@@ -12,7 +12,7 @@ const targets = JSON.parse(fs.readFileSync('config.json', 'utf-8')).targets as {
 
 const imagePath = 'screenshot';
 
-const resizeImage = async (
+const resizeImage = (
   input: string,
   output: string,
   width: number,
