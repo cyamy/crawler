@@ -12,3 +12,8 @@ create image diff that local preview and staging.
 
 1. `pnpm run start` for get screenshot
 2. `pnpm run test` for create screenshot diff
+
+## todo
+
+- add callback option for playwright operation when take screenshot.
+- resolve ESM imports problem.
