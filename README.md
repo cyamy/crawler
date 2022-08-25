@@ -15,5 +15,6 @@ create image diff that local preview and staging.
 
 ## todo
 
+- add parallel worker option.
 - add callback option for playwright operation when take screenshot.
 - resolve ESM imports problem.
