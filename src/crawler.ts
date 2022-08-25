@@ -7,6 +7,7 @@ const targets = JSON.parse(fs.readFileSync('config.json', 'utf-8')).targets as {
   testUp: string;
 }[];
 
+// https://playwright.dev/docs/emulation#devices
 const emulate = devices['iPhone 12'];
 const imagePath = 'screenshot';
 
