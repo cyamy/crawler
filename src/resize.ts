@@ -25,7 +25,7 @@ const resizeImage = (
     });
 };
 
-const forceDiffSetup = (
+const resize = (
   targets: {
     title: string;
     local: string;
@@ -50,4 +50,4 @@ const forceDiffSetup = (
   });
 };
 
-forceDiffSetup(targets);
+resize(targets);
