@@ -42,9 +42,7 @@ const test = () => {
 
       console.log(`${current.title}'s diff: ${diffPixelPercentage}%`);
     } catch (error) {
-      console.error(
-        `${current.title} pixelmatch error: image size are not equal`,
-      );
+      console.error(`${current.title} pixelmatch: image size are not equal`);
     }
   });
 };
