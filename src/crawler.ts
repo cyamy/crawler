@@ -13,7 +13,10 @@ const imagePath = 'screenshot';
 
 const getScreenShot = async (url: string, imagePath: string) => {
   const browser = await chromium.launch({ headless: true });
-  const context = await browser.newContext({ ...emulate });
+  const context = await browser.newContext({
+    ...emulate,
+    ignoreHTTPSErrors: true,
+  });
   const page = await context.newPage();
   await page.goto(url);
   await page.screenshot({
