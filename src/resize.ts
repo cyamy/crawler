@@ -11,7 +11,7 @@ const resizeImage = (
   height: number,
 ) => {
   sharp(input)
-    .resize(width, height, {})
+    .resize(width, height, { position: 'top' })
     .toFile(output, (err) => {
       // eslint-disable-next-line no-console
       if (err) console.error(err);
