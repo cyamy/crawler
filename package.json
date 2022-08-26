@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node --experimental-loader ts-node/esm src/crawler.ts",
     "resize": "node --experimental-loader ts-node/esm src/resize.ts",
-    "diff": "node --experimental-loader ts-node/esm src/test.ts"
+    "diff": "node --experimental-loader ts-node/esm src/diff.ts"
   },
   "lint-staged": {
     "*.{js,ts,jsx,tsx}": [
