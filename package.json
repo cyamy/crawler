@@ -9,8 +9,8 @@
   "license": "ISC",
   "scripts": {
     "start": "node --experimental-loader ts-node/esm src/crawler.ts",
-    "test": "node --experimental-loader ts-node/esm src/test.ts",
-    "build": "unbuild"
+    "diff": "node --experimental-loader ts-node/esm src/forceDiffSetup.ts",
+    "test": "node --experimental-loader ts-node/esm src/test.ts"
   },
   "lint-staged": {
     "*.{js,ts,jsx,tsx}": [
