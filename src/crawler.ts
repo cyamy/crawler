@@ -1,11 +1,7 @@
-import { devices, chromium } from '@playwright/test';
+import { chromium } from '@playwright/test';
 import fs from 'fs-extra';
-import { targets } from '../crawler.config';
+import { targets, imagePath, emulate } from '../crawler.config';
 import { Targets } from './util';
-
-// https://playwright.dev/docs/emulation#devices
-const emulate = devices['iPhone 12'];
-const imagePath = 'screenshot';
 
 const getScreenShot = async (url: string, imagePath: string) => {
   const browser = await chromium.launch({ headless: true });

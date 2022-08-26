@@ -1,9 +1,7 @@
 import fs from 'fs-extra';
 import { PNG } from 'pngjs';
 import pixelmatch from 'pixelmatch';
-import { targets } from '../crawler.config';
-
-const imagePath = 'screenshot';
+import { targets, imagePath } from '../crawler.config';
 
 const test = () => {
   targets.forEach((current) => {
