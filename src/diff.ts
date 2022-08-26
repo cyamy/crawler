@@ -1,7 +1,6 @@
 import fs from 'fs-extra';
 import { PNG } from 'pngjs';
 import pixelmatch from 'pixelmatch';
-import { readFileSync } from 'fs';
 import { targets } from '../crawler.config';
 
 const imagePath = 'screenshot';
@@ -11,11 +10,11 @@ const test = () => {
     const currentPath = imagePath + '/' + current.title;
 
     const local = fs.existsSync(currentPath + '/' + 'local-resize.png')
-      ? PNG.sync.read(readFileSync(currentPath + '/' + 'local-resize.png'))
-      : PNG.sync.read(readFileSync(currentPath + '/' + 'local.png'));
+      ? PNG.sync.read(fs.readFileSync(currentPath + '/' + 'local-resize.png'))
+      : PNG.sync.read(fs.readFileSync(currentPath + '/' + 'local.png'));
 
     const testUp = PNG.sync.read(
-      readFileSync(currentPath + '/' + 'testUp.png'),
+      fs.readFileSync(currentPath + '/' + 'testUp.png'),
     );
 
     const { width, height } = testUp;

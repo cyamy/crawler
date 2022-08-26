@@ -1,5 +1,5 @@
+import fs from 'fs-extra';
 import { PNG } from 'pngjs';
-import { readFileSync } from 'fs';
 import sharp from 'sharp';
 import { targets } from '../crawler.config';
 
@@ -28,9 +28,11 @@ const resize = (
 ) => {
   targets.forEach((current) => {
     const currentPath = imagePath + '/' + current.title;
-    const local = PNG.sync.read(readFileSync(currentPath + '/' + 'local.png'));
+    const local = PNG.sync.read(
+      fs.readFileSync(currentPath + '/' + 'local.png'),
+    );
     const testUp = PNG.sync.read(
-      readFileSync(currentPath + '/' + 'testUp.png'),
+      fs.readFileSync(currentPath + '/' + 'testUp.png'),
     );
 
     const { width, height } = testUp;
