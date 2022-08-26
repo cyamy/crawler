@@ -10,8 +10,9 @@ create image diff that local preview and staging.
 
 ## exec
 
-1. `pnpm run start` for get screenshot
-2. `pnpm run test` for create screenshot diff
+1. `pnpm run crawler` for get screenshot
+2. if you need all pixel diff image, run `pnpm run resize`
+3. `pnpm run diff` for create screenshot diff
 
 ## todo
 
