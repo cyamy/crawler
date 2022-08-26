@@ -2,6 +2,7 @@ import fs from 'fs-extra';
 import { PNG } from 'pngjs';
 import sharp from 'sharp';
 import { targets } from '../crawler.config';
+import { Targets } from './util';
 
 const imagePath = 'screenshot';
 
@@ -19,13 +20,7 @@ const resizeImage = (
     });
 };
 
-const resize = (
-  targets: {
-    title: string;
-    local: string;
-    testUp: string;
-  }[],
-) => {
+const resize = (targets: Targets[]) => {
   targets.forEach((current) => {
     const currentPath = imagePath + '/' + current.title;
     const local = PNG.sync.read(

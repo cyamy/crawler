@@ -1,6 +1,7 @@
 import { devices, chromium } from '@playwright/test';
 import fs from 'fs-extra';
 import { targets } from '../crawler.config';
+import { Targets } from './util';
 
 // https://playwright.dev/docs/emulation#devices
 const emulate = devices['iPhone 12'];
@@ -22,13 +23,7 @@ const getScreenShot = async (url: string, imagePath: string) => {
   await browser.close();
 };
 
-const crawler = async (
-  targets: {
-    title: string;
-    local: string;
-    testUp: string;
-  }[],
-) => {
+const crawler = async (targets: Targets[]) => {
   fs.removeSync(imagePath);
   fs.mkdirSync(imagePath);
 
