@@ -1,13 +1,7 @@
-import fs from 'fs-extra';
 import { PNG } from 'pngjs';
 import { readFileSync } from 'fs';
 import sharp from 'sharp';
-
-const targets = JSON.parse(fs.readFileSync('config.json', 'utf-8')).targets as {
-  title: string;
-  local: string;
-  testUp: string;
-}[];
+import { targets } from '../crawler.config';
 
 const imagePath = 'screenshot';
 

@@ -1,11 +1,6 @@
 import { devices, chromium } from '@playwright/test';
 import fs from 'fs-extra';
-
-const targets = JSON.parse(fs.readFileSync('config.json', 'utf-8')).targets as {
-  title: string;
-  local: string;
-  testUp: string;
-}[];
+import { targets } from '../crawler.config';
 
 // https://playwright.dev/docs/emulation#devices
 const emulate = devices['iPhone 12'];
