@@ -21,18 +21,14 @@ const resizeImage = (
 const resize = (targets: Targets[]) => {
   targets.forEach((current) => {
     const currentPath = imagePath + '/' + current.title;
-    const local = PNG.sync.read(
-      fs.readFileSync(currentPath + '/' + 'local.png'),
-    );
-    const stage = PNG.sync.read(
-      fs.readFileSync(currentPath + '/' + 'stage.png'),
-    );
+    const local = PNG.sync.read(fs.readFileSync(`${currentPath}/local.png`));
+    const stage = PNG.sync.read(fs.readFileSync(`${currentPath}/stage.png`));
 
     const { width, height } = stage;
 
     if (height !== local.height) {
-      const file = currentPath + '/' + 'local.png';
-      const resize = currentPath + '/' + 'local-resize.png';
+      const file = `${currentPath}/local.png`;
+      const resize = `${currentPath}/local-resize.png`;
 
       resizeImage(file, resize, width, height);
     }

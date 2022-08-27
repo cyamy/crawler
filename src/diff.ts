@@ -8,13 +8,11 @@ const test = () => {
   targets.forEach((current) => {
     const currentPath = imagePath + '/' + current.title;
 
-    const local = fs.existsSync(currentPath + '/' + 'local-resize.png')
-      ? PNG.sync.read(fs.readFileSync(currentPath + '/' + 'local-resize.png'))
-      : PNG.sync.read(fs.readFileSync(currentPath + '/' + 'local.png'));
+    const local = fs.existsSync(`${currentPath}/local-resize.png`)
+      ? PNG.sync.read(fs.readFileSync(`${currentPath}/local-resize.png`))
+      : PNG.sync.read(fs.readFileSync(`${currentPath}/local.png`));
 
-    const stage = PNG.sync.read(
-      fs.readFileSync(currentPath + '/' + 'stage.png'),
-    );
+    const stage = PNG.sync.read(fs.readFileSync(`${currentPath}/stage.png`));
 
     const { width, height } = stage;
     const diff = new PNG({ width, height });
