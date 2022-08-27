@@ -6,7 +6,7 @@ create image diff that local preview and staging.
 
 1. `pnpm install`
 2. `npx playwright install`
-3. define `crawler.config.ts`
+3. define `targets.yaml` for crawler targets
 
 ## exec
 

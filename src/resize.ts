@@ -1,8 +1,8 @@
 import fs from 'fs-extra';
 import { PNG } from 'pngjs';
 import sharp from 'sharp';
-import { targets, imagePath } from '../crawler.config';
-import { Targets } from './util';
+import { imagePath } from '../targets.config';
+import { Targets, targets } from './util';
 
 const resizeImage = (
   input: string,

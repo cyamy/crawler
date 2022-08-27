@@ -1,7 +1,7 @@
 import { chromium } from '@playwright/test';
 import fs from 'fs-extra';
-import { targets, imagePath, emulate } from '../crawler.config';
-import { Targets } from './util';
+import { imagePath, emulate } from '../targets.config';
+import { Targets, targets } from './util';
 
 const getScreenShot = async (url: string, imagePath: string) => {
   const browser = await chromium.launch({ headless: true });
