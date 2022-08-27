@@ -12,17 +12,17 @@ const test = () => {
       ? PNG.sync.read(fs.readFileSync(currentPath + '/' + 'local-resize.png'))
       : PNG.sync.read(fs.readFileSync(currentPath + '/' + 'local.png'));
 
-    const testUp = PNG.sync.read(
-      fs.readFileSync(currentPath + '/' + 'testUp.png'),
+    const stage = PNG.sync.read(
+      fs.readFileSync(currentPath + '/' + 'stage.png'),
     );
 
-    const { width, height } = testUp;
+    const { width, height } = stage;
     const diff = new PNG({ width, height });
 
     try {
       const result = pixelmatch(
         local.data,
-        testUp.data,
+        stage.data,
         diff.data,
         width,
         height,
@@ -32,7 +32,7 @@ const test = () => {
       );
 
       const diffPixelPercentage = (
-        (result / (testUp.width * testUp.height)) *
+        (result / (stage.width * stage.height)) *
         100
       ).toFixed(2);
 

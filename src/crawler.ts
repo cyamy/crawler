@@ -28,7 +28,7 @@ const crawler = async (targets: Targets[]) => {
     fs.mkdirSync(currentPath);
 
     await getScreenShot(current.local, `${currentPath}/local.png`);
-    await getScreenShot(current.testUp, `${currentPath}/testUp.png`);
+    await getScreenShot(current.stage, `${currentPath}/stage.png`);
 
     console.log(`save screenshot: ${current.title}`);
   });

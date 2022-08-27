@@ -4,7 +4,7 @@ import yaml from 'js-yaml';
 export type Targets = {
   title: string;
   local: string;
-  testUp: string;
+  stage: string;
 };
 
 type loadFile = {

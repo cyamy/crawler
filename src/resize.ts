@@ -24,11 +24,11 @@ const resize = (targets: Targets[]) => {
     const local = PNG.sync.read(
       fs.readFileSync(currentPath + '/' + 'local.png'),
     );
-    const testUp = PNG.sync.read(
-      fs.readFileSync(currentPath + '/' + 'testUp.png'),
+    const stage = PNG.sync.read(
+      fs.readFileSync(currentPath + '/' + 'stage.png'),
     );
 
-    const { width, height } = testUp;
+    const { width, height } = stage;
 
     if (height !== local.height) {
       const file = currentPath + '/' + 'local.png';
