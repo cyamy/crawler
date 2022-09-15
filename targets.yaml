@@ -1,4 +1,8 @@
 ---
+deviceList:
+  - iPhone 12
+  - iPad Mini landscape
+  - Desktop Chrome
 targets:
   - title: google
     local: https://www.google.com/

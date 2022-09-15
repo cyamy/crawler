@@ -9,11 +9,9 @@ export type Targets = {
 
 type loadFile = {
   targets: Targets[];
+  deviceList: string[];
 };
+const data = yaml.load(fs.readFileSync('targets.yaml', 'utf-8')) as loadFile;
 
-const loadTargets = () => {
-  const data = yaml.load(fs.readFileSync('targets.yaml', 'utf-8')) as loadFile;
-  return data.targets;
-};
-
-export const targets = loadTargets();
+export const deviceList = data.deviceList;
+export const targets = data.targets;

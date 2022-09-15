@@ -1,9 +1,14 @@
-import { chromium } from '@playwright/test';
+import { devices, chromium } from '@playwright/test';
 import fs from 'fs-extra';
-import { imagePath, emulate } from '../targets.config';
-import { Targets, targets } from './util';
+import { imagePath } from '../targets.config';
+import { deviceList, Targets, targets } from './util';
 
-const getScreenShot = async (url: string, imagePath: string) => {
+const getScreenShot = async (
+  device: string,
+  url: string,
+  imagePath: string,
+) => {
+  const emulate = devices[device];
   const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext({
     ...emulate,
@@ -27,10 +32,22 @@ const crawler = async (targets: Targets[]) => {
     const currentPath = imagePath + '/' + current.title;
     fs.mkdirSync(currentPath);
 
-    await getScreenShot(current.local, `${currentPath}/local.png`);
-    await getScreenShot(current.stage, `${currentPath}/stage.png`);
-
-    console.log(`save screenshot: ${current.title}`);
+    deviceList.forEach(async (device) => {
+      const currentDevicePath = currentPath + '/' + device;
+      fs.mkdirSync(currentDevicePath);
+      await getScreenShot(
+        device,
+        current.local,
+        `${currentDevicePath}/local.png`,
+      );
+      await getScreenShot(
+        device,
+        current.stage,
+        `${currentDevicePath}/stage.png`,
+      );
+      // eslint-disable-next-line no-console
+      console.log(`save screenshot: ${current.title + ' ' + device}`);
+    });
   });
 };
 
