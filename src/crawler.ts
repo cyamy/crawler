@@ -1,7 +1,7 @@
 import { devices, chromium } from '@playwright/test';
 import fs from 'fs-extra';
 import { imagePath } from '../targets.config';
-import { deviceList, Targets, targets } from './util';
+import { emulateDevices, Targets, targets } from './util';
 
 const getScreenShot = async (
   device: string,
@@ -32,7 +32,7 @@ const crawler = async (targets: Targets[]) => {
     const currentPath = imagePath + '/' + current.title;
     fs.mkdirSync(currentPath);
 
-    deviceList.forEach(async (device) => {
+    emulateDevices.forEach(async (device) => {
       const currentDevicePath = currentPath + '/' + device;
       fs.mkdirSync(currentDevicePath);
       await getScreenShot(

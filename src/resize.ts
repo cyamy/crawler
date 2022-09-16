@@ -2,7 +2,7 @@ import fs from 'fs-extra';
 import { PNG } from 'pngjs';
 import sharp from 'sharp';
 import { imagePath } from '../targets.config';
-import { deviceList, Targets, targets } from './util';
+import { emulateDevices, Targets, targets } from './util';
 
 const resizeImage = (
   input: string,
@@ -20,7 +20,7 @@ const resizeImage = (
 
 const resize = (targets: Targets[]) => {
   targets.forEach((current) => {
-    deviceList.forEach((device) => {
+    emulateDevices.forEach((device) => {
       const currentPath = imagePath + '/' + current.title;
       const currentDevicePath = currentPath + '/' + device;
       const local = PNG.sync.read(

@@ -1,5 +1,5 @@
 ---
-deviceList:
+emulateDevices:
   - iPhone 12
   - iPad Mini landscape
   - Desktop Chrome

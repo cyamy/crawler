@@ -2,11 +2,11 @@ import fs from 'fs-extra';
 import { PNG } from 'pngjs';
 import pixelmatch from 'pixelmatch';
 import { imagePath } from '../targets.config';
-import { deviceList, targets } from './util';
+import { emulateDevices, targets } from './util';
 
 const test = () => {
   targets.forEach((current) => {
-    deviceList.forEach((device) => {
+    emulateDevices.forEach((device) => {
       const currentPath = imagePath + '/' + current.title;
       const currentDevicePath = currentPath + '/' + device;
 
