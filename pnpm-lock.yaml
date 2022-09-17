@@ -8,7 +8,7 @@ specifiers:
   '@types/node': 18.7.5
   '@types/pixelmatch': 5.2.4
   '@types/pngjs': 6.0.1
-  '@types/sharp': 0.30.5
+  '@types/sharp': 0.31.0
   '@typescript-eslint/eslint-plugin': 5.37.0
   '@typescript-eslint/parser': 5.37.0
   c8: 7.12.0
@@ -38,7 +38,7 @@ devDependencies:
   '@types/node': 18.7.5
   '@types/pixelmatch': 5.2.4
   '@types/pngjs': 6.0.1
-  '@types/sharp': 0.30.5
+  '@types/sharp': 0.31.0
   '@typescript-eslint/eslint-plugin': 5.37.0_22c5fnooleyfkzrkkgdmel5kmi
   '@typescript-eslint/parser': 5.37.0_irgkl5vooow2ydyo6aokmferha
   c8: 7.12.0
@@ -589,8 +589,8 @@ packages:
       '@types/node': 18.7.5
     dev: true
 
-  /@types/sharp/0.30.5:
-    resolution: {integrity: sha512-EhO29617AIBqxoVtpd1qdBanWpspk/kD2B6qTFRJ31Q23Rdf+DNU1xlHSwtqvwq1vgOqBwq1i38SX+HGCymIQg==}
+  /@types/sharp/0.31.0:
+    resolution: {integrity: sha512-nwivOU101fYInCwdDcH/0/Ru6yIRXOpORx25ynEOc6/IakuCmjOAGpaO5VfUl4QkDtUC6hj+Z2eCQvgXOioknw==}
     dependencies:
       '@types/node': 18.7.5
     dev: true
