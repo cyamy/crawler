@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@playwright/test': 1.25.2
+  '@playwright/test': 1.26.0
   '@types/fs-extra': 9.0.13
   '@types/js-yaml': 4.0.5
   '@types/jsdom': 20.0.0
@@ -31,7 +31,7 @@ specifiers:
   vitest: 0.23.4
 
 devDependencies:
-  '@playwright/test': 1.25.2
+  '@playwright/test': 1.26.0
   '@types/fs-extra': 9.0.13
   '@types/js-yaml': 4.0.5
   '@types/jsdom': 20.0.0
@@ -409,13 +409,13 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@playwright/test/1.25.2:
-    resolution: {integrity: sha512-6qPznIR4Fw02OMbqXUPMG6bFFg1hDVNEdihKy0t9K0dmRbus1DyP5Q5XFQhGwEHQkLG5hrSfBuu9CW/foqhQHQ==}
+  /@playwright/test/1.26.0:
+    resolution: {integrity: sha512-D24pu1k/gQw3Lhbpc38G5bXlBjGDrH5A52MsrH12wz6ohGDeQ+aZg/JFSEsT/B3G8zlJe/EU4EkJK74hpqsjEg==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
       '@types/node': 18.7.5
-      playwright-core: 1.25.2
+      playwright-core: 1.26.0
     dev: true
 
   /@rollup/plugin-alias/3.1.9_rollup@2.79.0:
@@ -3178,8 +3178,8 @@ packages:
       pathe: 0.3.5
     dev: true
 
-  /playwright-core/1.25.2:
-    resolution: {integrity: sha512-0yTbUE9lIddkEpLHL3u8PoCL+pWiZtj5A/j3U7YoNjcmKKDGBnCrgHJMzwd2J5vy6l28q4ki3JIuz7McLHhl1A==}
+  /playwright-core/1.26.0:
+    resolution: {integrity: sha512-p8huU8eU4gD3VkJd3DA1nA7R3XA6rFvFL+1RYS96cSljCF2yJE9CWEHTPF4LqX8KN9MoWCrAfVKP5381X3CZqg==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
