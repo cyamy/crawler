@@ -22,7 +22,7 @@ A. https://stackoverflow.com/questions/68361792/what-devices-are-available-using
 
 Q. The element is not displayed because the class is given in the scroll trigger. Is it possible to add the class before the screenshot? 
 
-A. add this code for crawler.ts (will be adding an option to handle　this code.)
+A. add this code for crawler.ts (will be adding an option to handle this code.)
 ```ts
 // add this function
 const activeAnimationItem = async (page: Page) => {
