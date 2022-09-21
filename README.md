@@ -1,4 +1,4 @@
-# crawler
+# crawldiffer
 
 create image diff that local preview and staging.
 
@@ -13,6 +13,32 @@ create image diff that local preview and staging.
 1. `pnpm run crawler` for get screenshot
 2. if you need all pixel diff image, run `pnpm run resize`
 3. `pnpm run diff` for create screenshot diff
+
+## faq
+
+Q. The element is not displayed because the class is given in the scroll trigger. Is it possible to add the class before the screenshot? 
+
+A. add this function for crawler.ts (will be adding an option to handle　this code.)
+```ts
+const activeAnimationItem = async (page: Page) => {
+  await page.evaluate(async () => {
+    await new Promise((resolve) => {
+      const targets = document.querySelectorAll('.js-targetElement');
+      targets.forEach((target) => {
+        target.classList.add('is-active');
+      });
+      resolve('ok');
+    });
+  });
+};
+
+const getScreenShot = async (
+~~~
+  await page.goto(url);
+  await activeAnimationItem(page); // add this code in getScreenShot func
+  await page.screenshot({
+~~~
+```
 
 ## todo
 
