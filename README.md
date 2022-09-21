@@ -10,9 +10,10 @@ create image diff that local preview and staging.
 
 ## exec
 
-1. `pnpm run crawler` for get screenshot
-2. if you need all pixel diff image, run `pnpm run resize`
-3. `pnpm run diff` for create screenshot diff
+1. clone this repo
+2. `pnpm run crawler` for get screenshot
+3. if you need all pixel diff image, run `pnpm run resize`
+4. `pnpm run diff` for create screenshot diff
 
 ## faq
 
