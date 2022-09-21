@@ -18,8 +18,9 @@ create image diff that local preview and staging.
 
 Q. The element is not displayed because the class is given in the scroll trigger. Is it possible to add the class before the screenshot? 
 
-A. add this function for crawler.ts (will be adding an option to handle　this code.)
+A. add this code for crawler.ts (will be adding an option to handle　this code.)
 ```ts
+// add this function
 const activeAnimationItem = async (page: Page) => {
   await page.evaluate(async () => {
     await new Promise((resolve) => {
@@ -35,7 +36,7 @@ const activeAnimationItem = async (page: Page) => {
 const getScreenShot = async (
 ~~~
   await page.goto(url);
-  await activeAnimationItem(page); // add this code in getScreenShot func
+  await activeAnimationItem(page); // add this
   await page.screenshot({
 ~~~
 ```
