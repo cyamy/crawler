@@ -16,6 +16,10 @@ create image diff that local preview and staging.
 
 ## faq
 
+Q. What emulate devices are available? 
+
+A. https://stackoverflow.com/questions/68361792/what-devices-are-available-using-playwright-devices-api
+
 Q. The element is not displayed because the class is given in the scroll trigger. Is it possible to add the class before the screenshot? 
 
 A. add this code for crawler.ts (will be adding an option to handle　this code.)
