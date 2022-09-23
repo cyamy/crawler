@@ -4,16 +4,16 @@ create image diff that local preview and staging.
 
 ## setup
 
-1. `pnpm install`
-2. `npx playwright install`
-3. define `targets.yaml` for crawler targets
+1. clone this repo
+2. `pnpm install`
+3. `npx playwright install`
+4. define `targets.yaml` for crawler targets
 
 ## exec
 
-1. clone this repo
-2. `pnpm run crawler` for get screenshot
-3. if you need all pixel diff image, run `pnpm run resize`
-4. `pnpm run diff` for create screenshot diff
+1. `pnpm run crawler` for get screenshot
+2. if you need all pixel diff image, run `pnpm run resize`
+3. `pnpm run diff` for create screenshot diff
 
 ## faq
 
