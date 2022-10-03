@@ -47,6 +47,10 @@ const getScreenShot = async (
 ```
 
 ## todo
-
+- check for correct rendering engine for each emulated device.
+- more error handrings.
+- move screenshot filepath setting to yaml config.
+- add max timeout setting to yaml config.
 - add parallel worker option.
 - add callback option for playwright operation when take screenshot.
+- publish npm package.
