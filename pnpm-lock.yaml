@@ -15,7 +15,7 @@ specifiers:
   eslint: 8.25.0
   eslint-config-prettier: 8.5.0
   eslint-plugin-import: 2.26.0
-  eslint-plugin-n: 15.3.0
+  eslint-plugin-n: 15.4.0
   fs-extra: 10.1.0
   husky: 8.0.1
   js-yaml: 4.1.0
@@ -45,7 +45,7 @@ devDependencies:
   eslint: 8.25.0
   eslint-config-prettier: 8.5.0_eslint@8.25.0
   eslint-plugin-import: 2.26.0_dzvnzej2un7roooznz6ef2if2q
-  eslint-plugin-n: 15.3.0_eslint@8.25.0
+  eslint-plugin-n: 15.4.0_eslint@8.25.0
   fs-extra: 10.1.0
   husky: 8.0.1
   js-yaml: 4.1.0
@@ -1876,8 +1876,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-n/15.3.0_eslint@8.25.0:
-    resolution: {integrity: sha512-IyzPnEWHypCWasDpxeJnim60jhlumbmq0pubL6IOcnk8u2y53s5QfT8JnXy7skjHJ44yWHRb11PLtDHuu1kg/Q==}
+  /eslint-plugin-n/15.4.0_eslint@8.25.0:
+    resolution: {integrity: sha512-MkoKy9/lfd52TAXK4fkABgCp0aglk82Q3viy2UOWIEpTVE/Cem5P/UAxMBA4vSw7Gy+2egPqImE9euitLGp5aw==}
     engines: {node: '>=12.22.0'}
     peerDependencies:
       eslint: '>=7.0.0'
