@@ -5,7 +5,7 @@ specifiers:
   '@types/fs-extra': 9.0.13
   '@types/js-yaml': 4.0.5
   '@types/jsdom': 20.0.0
-  '@types/node': 18.7.5
+  '@types/node': 18.11.8
   '@types/pixelmatch': 5.2.4
   '@types/pngjs': 6.0.1
   '@types/sharp': 0.31.0
@@ -35,7 +35,7 @@ devDependencies:
   '@types/fs-extra': 9.0.13
   '@types/js-yaml': 4.0.5
   '@types/jsdom': 20.0.0
-  '@types/node': 18.7.5
+  '@types/node': 18.11.8
   '@types/pixelmatch': 5.2.4
   '@types/pngjs': 6.0.1
   '@types/sharp': 0.31.0
@@ -55,7 +55,7 @@ devDependencies:
   pngjs: 6.0.0
   prettier: 2.7.1
   sharp: 0.31.1
-  ts-node: 10.9.1_o3skoy4ojg56ss53bezpleqmsa
+  ts-node: 10.9.1_7jzoohtnaegavowzoeccrsbhty
   typescript: 4.8.4
   unbuild: 0.8.11
   vitest: 0.24.4_jsdom@20.0.1
@@ -410,7 +410,7 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
-      '@types/node': 18.7.5
+      '@types/node': 18.11.8
       playwright-core: 1.27.0
     dev: true
 
@@ -536,7 +536,7 @@ packages:
   /@types/fs-extra/9.0.13:
     resolution: {integrity: sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==}
     dependencies:
-      '@types/node': 18.7.5
+      '@types/node': 18.11.8
     dev: true
 
   /@types/istanbul-lib-coverage/2.0.4:
@@ -550,7 +550,7 @@ packages:
   /@types/jsdom/20.0.0:
     resolution: {integrity: sha512-YfAchFs0yM1QPDrLm2VHe+WHGtqms3NXnXAMolrgrVP6fgBHHXy1ozAbo/dFtPNtZC/m66bPiCTWYmqp1F14gA==}
     dependencies:
-      '@types/node': 18.7.5
+      '@types/node': 18.11.8
       '@types/tough-cookie': 4.0.2
       parse5: 7.0.0
     dev: true
@@ -563,32 +563,32 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
-  /@types/node/18.7.5:
-    resolution: {integrity: sha512-NcKK6Ts+9LqdHJaW6HQmgr7dT/i3GOHG+pt6BiWv++5SnjtRd4NXeiuN2kA153SjhXPR/AhHIPHPbrsbpUVOww==}
+  /@types/node/18.11.8:
+    resolution: {integrity: sha512-uGwPWlE0Hj972KkHtCDVwZ8O39GmyjfMane1Z3GUBGGnkZ2USDq7SxLpVIiIHpweY9DS0QTDH0Nw7RNBsAAZ5A==}
     dev: true
 
   /@types/pixelmatch/5.2.4:
     resolution: {integrity: sha512-HDaSHIAv9kwpMN7zlmwfTv6gax0PiporJOipcrGsVNF3Ba+kryOZc0Pio5pn6NhisgWr7TaajlPEKTbTAypIBQ==}
     dependencies:
-      '@types/node': 18.7.5
+      '@types/node': 18.11.8
     dev: true
 
   /@types/pngjs/6.0.1:
     resolution: {integrity: sha512-J39njbdW1U/6YyVXvC9+1iflZghP8jgRf2ndYghdJb5xL49LYDB+1EuAxfbuJ2IBbWIL3AjHPQhgaTxT3YaYeg==}
     dependencies:
-      '@types/node': 18.7.5
+      '@types/node': 18.11.8
     dev: true
 
   /@types/resolve/1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
     dependencies:
-      '@types/node': 18.7.5
+      '@types/node': 18.11.8
     dev: true
 
   /@types/sharp/0.31.0:
     resolution: {integrity: sha512-nwivOU101fYInCwdDcH/0/Ru6yIRXOpORx25ynEOc6/IakuCmjOAGpaO5VfUl4QkDtUC6hj+Z2eCQvgXOioknw==}
     dependencies:
-      '@types/node': 18.7.5
+      '@types/node': 18.11.8
     dev: true
 
   /@types/tough-cookie/4.0.2:
@@ -3720,7 +3720,7 @@ packages:
       punycode: 2.1.1
     dev: true
 
-  /ts-node/10.9.1_o3skoy4ojg56ss53bezpleqmsa:
+  /ts-node/10.9.1_7jzoohtnaegavowzoeccrsbhty:
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -3739,7 +3739,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
-      '@types/node': 18.7.5
+      '@types/node': 18.11.8
       acorn: 8.8.0
       acorn-walk: 8.2.0
       arg: 4.1.3
@@ -3981,7 +3981,7 @@ packages:
     dependencies:
       '@types/chai': 4.3.3
       '@types/chai-subset': 1.3.3
-      '@types/node': 18.7.5
+      '@types/node': 18.11.8
       chai: 4.3.6
       debug: 4.3.4
       jsdom: 20.0.1
