@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@playwright/test': 1.27.0
   '@types/fs-extra': 9.0.13
-  '@types/js-yaml': 4.0.5
+  '@types/js-yaml': 4.0.9
   '@types/jsdom': 20.0.0
   '@types/node': 18.11.18
   '@types/pixelmatch': 5.2.4
@@ -33,7 +33,7 @@ specifiers:
 devDependencies:
   '@playwright/test': 1.27.0
   '@types/fs-extra': 9.0.13
-  '@types/js-yaml': 4.0.5
+  '@types/js-yaml': 4.0.9
   '@types/jsdom': 20.0.0
   '@types/node': 18.11.18
   '@types/pixelmatch': 5.2.4
@@ -543,8 +543,8 @@ packages:
     resolution: {integrity: sha512-z/QT1XN4K4KYuslS23k62yDIDLwLFkzxOuMplDtObz0+y7VqJCaO2o+SPwHCvLFZh7xazvvoor2tA/hPz9ee7g==}
     dev: true
 
-  /@types/js-yaml/4.0.5:
-    resolution: {integrity: sha512-FhpRzf927MNQdRZP0J5DLIdTXhjLYzeUTmLAu69mnVksLH9CJY3IuSeEgbKUki7GQZm0WqDkGzyxju2EZGD2wA==}
+  /@types/js-yaml/4.0.9:
+    resolution: {integrity: sha512-k4MGaQl5TGo/iipqb2UDG2UwjXziSWkh0uysQelTlJpX1qGlpUZYm8PnO4DxG1qBomtJUdYJ6qR6xdIah10JLg==}
     dev: true
 
   /@types/jsdom/20.0.0:
