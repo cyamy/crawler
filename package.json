@@ -20,7 +20,7 @@
   "devDependencies": {
     "@playwright/test": "1.27.0",
     "@types/fs-extra": "9.0.13",
-    "@types/js-yaml": "4.0.5",
+    "@types/js-yaml": "4.0.9",
     "@types/jsdom": "20.0.0",
     "@types/node": "18.11.18",
     "@types/pixelmatch": "5.2.4",
